@@ -83,7 +83,9 @@ function initiate() {
   currentMessage.innerHTML = 'Press "Accept Notifications" to begin';
   setupButtons();
   displaySavedMessages();
-  alert('Welcome to my Website, Please press "Accept New Notifications" button to accept new jokes, Thank you!');
+  setTimeout(() => {
+    alert('Welcome to my Website, Please press "Accept New Notifications" button to accept new jokes, Thank you!');
+  }, 2000);
 }
 
 
