@@ -88,5 +88,4 @@ function initiate() {
   }, 2000);
 }
 
-
 initiate();
