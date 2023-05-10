@@ -12,10 +12,10 @@ let saved_message = []; // array which holds the messages for the saved-messages
 // Create a new Audio object
 
 const audio = [
-  new Audio('haha.mp3'),
+  new Audio('coffin.mp3'),
   new Audio('spongeBob.mp3'),
   new Audio('galaxy.mp3'),
-  new Audio('coffin.mp3')
+  new Audio('haha.mp3')
 ]
 
 // Fetches a random joke from the API and displays it in the "Current Message" section
