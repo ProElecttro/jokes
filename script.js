@@ -14,7 +14,8 @@ let saved_message = []; // array which holds the messages for the saved-messages
 const audio = [
   new Audio('haha.mp3'),
   new Audio('spongeBob.mp3'),
-  new Audio('galaxy.mp3')
+  new Audio('galaxy.mp3'),
+  new Audio('coffin.mp3')
 ]
 
 // Fetches a random joke from the API and displays it in the "Current Message" section
@@ -99,9 +100,10 @@ function clearAllsaved_message() {
 
 // Start the joke timer to fetch and display new jokes every few seconds
 function startJokeTimer() {
+  const load_sound = new Audio('loading.mp3');
   // Update the "Current Message" section to indicate that new jokes are being fetched
   currentMessage.innerHTML = 'Fetching new jokes, wait for few seconds';
-
+  load_sound.play();
   // Set up the joke timer to display a new joke every 13 seconds
   jokeTimer = setInterval(() => {
     displayJoke();
@@ -127,8 +129,7 @@ function setupButtons() {
 function initiate() {
   currentMessage.innerHTML = 'Press "Accept Notifications" to begin';
   setupButtons();
-  displaysaved_message();
-
+  displaysaved_message()
 }
 
 initiate();
