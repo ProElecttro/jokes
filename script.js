@@ -110,6 +110,7 @@ function startJokeTimer() {
 
 // Stop the joke timer and display the most recent saved joke in the "Current Message" section
 function stopJokeTimer() {
+  alert('Blocked New Notifications');
   // Clear the joke timer
   clearInterval(jokeTimer);
   displayLastSavedJoke();
