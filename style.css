@@ -1,15 +1,18 @@
+/* Sets the font family and background image for the page */
 body {
 	font-family: 'Helvetica Neue', sans-serif;
 	background-image: url('img.jpg');
 	background-size: cover;
 }
 
+/* Sets the maximum width, margin, and padding for a container element */
 .container {
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 20px;
 }
 
+/* Styles the header element with a background color, text color, padding, and border radius */
 .header {
 	display: flex;
 	justify-content: space-between;
@@ -20,11 +23,13 @@ body {
 	border-radius: 5px;
 }
 
+/* Styles the h1 element inside the header element with a font size and margin */
 .header h1 {
 	font-size: 32px;
 	margin: 0;
 }
 
+/* Styles the current message section with a background color, padding, margin, border radius, and box shadow */
 .current-message-section {
 	background-color: #fff;
 	padding: 20px;
@@ -33,6 +38,7 @@ body {
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+/* Styles the saved message section with a background color, padding, border radius, box shadow, overflow, and max height */
 .saved-message-section {
 	background-color: #fff;
 	padding: 20px;
@@ -42,11 +48,13 @@ body {
 	max-height: 500px;
 }
 
+/* Styles the h2 element inside the saved message section with a font size and margin bottom */
 .saved-message-section h2 {
 	font-size: 24px;
 	margin-bottom: 10px;
 }
 
+/* Styles the button element with a background color, text color, border, border radius, padding, font size, cursor, margin right, transition, and margin bottom */
 .btn {
 	background-color: #333;
 	color: #fff;
@@ -60,6 +68,7 @@ body {
 	margin-bottom: 20px;
 }
 
+/* Styles the delete button on hover with a background color, border, border radius, padding, font size, cursor, margin right, transition, margin bottom, color, box shadow, and translation */
 .delete-btn:hover {
 	background-color: #ff6961;
 	border: none;
@@ -75,6 +84,7 @@ body {
 	transform: translateY(-1px);
 }
 
+/* Styles all buttons on hover with a background color and scale transformation */
 .btn:hover{
 	background-color: #555;
 	transform: scale(1.1);
